@@ -5,8 +5,7 @@ Support Vector Machines have been around for a long time now. First developed in
 So, here I have:
 
   - Some theory behind the algorithm
-  - An easy to follow example
-  - Useful references if you want to read about them further
+  - An easy example
 
 # Brief Theory
 
