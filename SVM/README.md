@@ -52,7 +52,7 @@ SVM model finds a hyperplane by using the optimal values w* (weights/normal) and
 
 The cost function of an SVM looks like this:
 
-![formula](https://render.githubusercontent.com/render/math?math=J(w)=\frac{1}{2}\left%20\|%20w%20\right%20\|^{2}+C\left%20[%20\frac{1}{N}\sum%20max(o,1%20-%20y_{i}*(w\cdot%20x_{i}+b))%20\right%20])
+![formula](https://render.githubusercontent.com/render/math?math=\left%20\{%20f:\left%20\|%20f%20\right%20\|_{K}^{2}%20\leq%20A^{2}%20\right%20\})
 
 The common thing to do instead of calculating $$b$$ is to push be into the weights vector by adding 1 before all the rows.
 
