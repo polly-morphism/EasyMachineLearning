@@ -29,7 +29,7 @@ The simplest formulation of SVM is the linear one,
 where the hyperplane lies on the space of the input data x. In this case the hypothesis space is a subset of all
 hyperplanes of the form:
 
-![formula](https://render.githubusercontent.com/render/math?math=f(x)=w⋅x+b)
+![formula](https://render.githubusercontent.com/render/math?math=f(x)=w\cdot%20x+b)
 
 SVM finds a hyperplane in a feature space induced by a kernel K (the kernel defines a dot product in that space.
 Through the kernel K the hypothesis space is defined as a set of "hyperplanes" in the feature space induced by K.
@@ -37,7 +37,8 @@ This can also be seen as a set of functions in a Reproducing Kernel Hilbert Spac
 So to summarize, the hypothesis space used by SVM is a subset of the set of hyperplanes defined in some space -
 an RKHS. This space can be formally written as
 
-![formula](https://render.githubusercontent.com/render/math?math=\left\{f:\left\|%20f\right\|_{K}^{2}\leqA^{2}\right\})
+![formula](https://render.githubusercontent.com/render/math?math=\left%20\{%20f:\left%20\|%20f%20\right%20\|_{K}^{2}%20\leq%20A^{2}%20\right%20\})
+
 
 where K is the kernel that defines the RKHS, and f K is the RKHS norm of the function. for some constant A
 
@@ -51,7 +52,7 @@ SVM model finds a hyperplane by using the optimal values w* (weights/normal) and
 
 The cost function of an SVM looks like this:
 
-![formula](https://render.githubusercontent.com/render/math?math=J(w)=\frac{1}{2}%20\left\|%20w\right\|^{2}+C\left%20[%20\frac{1}{N}\sum max(o,1-y_{i}*(w\cdot%20x_{i}+b))\right%20])
+![formula](https://render.githubusercontent.com/render/math?math=J(w)=\frac{1}{2}\left%20\|%20w%20\right%20\|^{2}+C\left%20[%20\frac{1}{N}\sum%20max(o,1%20-%20y_{i}*(w\cdot%20x_{i}+b))%20\right%20])
 
 The common thing to do instead of calculating $$b$$ is to push be into the weights vector by adding 1 before all the rows.
 
