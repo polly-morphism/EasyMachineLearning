@@ -16,7 +16,7 @@ find a function f that minimizes the expected error:
 
 ![formula](https://render.githubusercontent.com/render/math?math=\int%20V(y,f(x))P(x,y)dxdy)
 
-Since $P(x,y)$ in unknown, we need to use some induction principle in order to infer from the $$l$$ available training
+Since $P(x,y)$ in unknown, we need to use some induction principle in order to infer from the $l$ available training
 examples a function that minimizes the expected error. The principle used is Empirical Risk Minimization (ERM)
 over a set of possible functions, called hypothesis space. Formally this can be written as minimizing the empirical
 error:
@@ -37,7 +37,7 @@ This can also be seen as a set of functions in a Reproducing Kernel Hilbert Spac
 So to summarize, the hypothesis space used by SVM is a subset of the set of hyperplanes defined in some space -
 an RKHS. This space can be formally written as
 
-![formula](https://render.githubusercontent.com/render/math?math=\left%20\{%20f:\left%20\|%20f%20\right%20\|_{K}^{2}%20\leq%20A^{2}%20\right%20\})
+![formula](https://render.githubusercontent.com/render/math?math=\left%20\|%20f%20\right%20\|_{K}^{2}%20\leq%20A^{2})
 
 
 where K is the kernel that defines the RKHS, and f K is the RKHS norm of the function. for some constant A
