@@ -13,6 +13,7 @@ So, here I have:
 What we do in statistical learning theory:
 The problem in SLT consists in finding a function f that minimizes the expectation of the error on new data, that is,
 find a function f that minimizes the expected error:
+![formula](https://render.githubusercontent.com/render/math?math=\int%20V(y,f(x))P(x,y)dxdy)
 $$\int V(y, f(x)) P(x, y)dxdy$$
 Since $$P(x,y)$$ in unknown, we need to use some induction principle in order to infer from the $$l$$ available training
 examples a function that minimizes the expected error. The principle used is Empirical Risk Minimization (ERM)
